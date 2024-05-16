@@ -6,3 +6,5 @@ class Seller < User
   end
 
 end
+
+#superは親のクラスの同名のメソッド内容をそのまま実行するってこと
