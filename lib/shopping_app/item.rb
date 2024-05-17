@@ -7,14 +7,14 @@ class Item
 
   @@instances = []
 
-  def initialize(number, name, price, owner=nil)
+  def initialize(number, name, price, owner=nil)#オーナーは作られたインスタンスをレシーバーとする
     @number = number
     @name = name
     @price = price
     self.owner = owner
 
     # Itemインスタンスの生成時、そのItemインスタンス(self)は、@@insntancesというクラス変数に格納されます。
-    @@instances << self
+    @@instances << self #自分（インスタンス）
   end
 
   def label
